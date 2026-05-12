@@ -34,9 +34,9 @@ describe("WishCard", () => {
   it("links to the product page", () => {
     render(<WishCard wish={wish} />);
 
-    expect(screen.getByRole("link", { name: "상품 보기" })).toHaveAttribute(
-      "href",
-      wish.productUrl,
-    );
+    const productLink = screen.getByRole("link", { name: "상품 보기" });
+
+    expect(productLink).toHaveAttribute("href", wish.productUrl);
+    expect(productLink).toHaveClass("inline-flex");
   });
 });

@@ -1,9 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { toast } from "sonner";
 import { bankAccount } from "@/src/lib/profile";
-
-type CopyState = "idle" | "copied" | "error";
 
 function copyWithSelectionFallback(text: string): boolean {
   if (typeof document.execCommand !== "function") {
@@ -42,18 +40,17 @@ async function copyAccountNumber(text: string): Promise<boolean> {
 }
 
 export function BankAccountPanel() {
-  const [copyState, setCopyState] = useState<CopyState>("idle");
-
   async function handleCopyAccount() {
-    const copied = await copyAccountNumber(bankAccount.accountNumber);
+    const copied = await copyAccountNumber(
+      `${bankAccount.bankName} ${bankAccount.accountNumber}`,
+    );
 
     if (copied) {
-      setCopyState("copied");
-      window.setTimeout(() => setCopyState("idle"), 1800);
+      toast.success("복사됐어요!");
       return;
     }
 
-    setCopyState("error");
+    toast.error("복사에 실패했어요.");
   }
 
   return (
@@ -83,18 +80,6 @@ export function BankAccountPanel() {
           >
             계좌번호 복사하기
           </button>
-          {copyState !== "idle" ? (
-            <p
-              className={
-                copyState === "copied"
-                  ? "text-center text-sm font-black text-[#145c2d]"
-                  : "text-center text-sm font-black text-[#8f1741]"
-              }
-              role={copyState === "copied" ? "status" : "alert"}
-            >
-              {copyState === "copied" ? "복사됐어요!" : "복사에 실패했어요."}
-            </p>
-          ) : null}
         </div>
       </div>
     </section>
