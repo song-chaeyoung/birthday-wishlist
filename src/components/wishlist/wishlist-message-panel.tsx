@@ -14,7 +14,7 @@ export function WishlistMessagePanel() {
 
   return (
     <section
-      className="relative overflow-hidden"
+      className="relative overflow-visible"
       aria-label="비공개 메시지 남기기"
     >
       {showEffect ? (
@@ -35,7 +35,7 @@ export function WishlistMessagePanel() {
           aria-expanded={isOpen}
           onClick={() => setIsOpen((current) => !current)}
         >
-          마음만 보내기
+          마음만 보태기
         </button>
       </div>
 

@@ -34,6 +34,19 @@ describe("WishlistPage", () => {
     expect(title).toHaveClass("pixel-display");
   });
 
+  it("does not clip the general message button shadow", () => {
+    const { container } = render(<WishlistPage wishes={[wish]} summary={summary} />);
+
+    const messageButton = container.querySelector<HTMLButtonElement>(
+      '[aria-controls="wishlist-message-form"]',
+    );
+    const messagePanel = messageButton?.closest("section");
+
+    expect(messageButton).toBeInTheDocument();
+    expect(messagePanel).toHaveClass("overflow-visible");
+    expect(messagePanel).not.toHaveClass("overflow-hidden");
+  });
+
   it("toggles one general message form above the wish cards", () => {
     render(<WishlistPage wishes={[wish]} summary={summary} />);
 
