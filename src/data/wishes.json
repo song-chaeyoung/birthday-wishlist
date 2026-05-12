@@ -1,0 +1,42 @@
+[
+  {
+    "id": "designer-bag",
+    "name": "Designer Bag",
+    "description": "반짝이는 생일 외출에 들고 싶은 위시템이에요.",
+    "price": 3200000,
+    "fundedAmount": 850000,
+    "image": "/wishes/designer-bag.jpg",
+    "priority": "top",
+    "status": "open"
+  },
+  {
+    "id": "tablet-pro",
+    "name": "Tablet Pro",
+    "description": "공부도 낙서도 귀엽게 해낼 수 있는 큰 화면 선물.",
+    "price": 1800000,
+    "fundedAmount": 620000,
+    "image": "",
+    "priority": "top",
+    "status": "open"
+  },
+  {
+    "id": "weekend-hotel-stay",
+    "name": "Weekend Hotel Stay",
+    "description": "생일 주간에 푹 쉬고 싶은 하루짜리 도피처.",
+    "price": 650000,
+    "fundedAmount": 260000,
+    "image": "/wishes/weekend-hotel-stay.jpg",
+    "priority": "normal",
+    "status": "open"
+  },
+  {
+    "id": "noise-canceling-headphones",
+    "name": "Noise-Canceling Headphones",
+    "description": "출퇴근길을 조용하고 폭신하게 만들어 줄 아이템.",
+    "price": 520000,
+    "fundedAmount": 120000,
+    "image": "/wishes/noise-canceling-headphones.jpg",
+    "priority": "normal",
+    "status": "open"
+  }
+]
