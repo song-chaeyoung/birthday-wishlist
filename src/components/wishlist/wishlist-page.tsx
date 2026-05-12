@@ -21,7 +21,9 @@ export function WishlistPage({ wishes, summary }: WishlistPageProps) {
               {wishlistTitle}
             </h1>
             <p className="text-base font-bold leading-7 text-[#5a3a6f] sm:text-lg">
-              결제는 없고, 메시지는 저만 조용히 확인할게요.
+              {"결제는 진행되지 않으며,"}
+              <br />
+              <span>작성한 메시지는 저에게만 공개됩니다.</span>
             </p>
           </div>
 

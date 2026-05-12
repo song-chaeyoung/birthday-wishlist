@@ -35,7 +35,7 @@ export function WishlistMessagePanel() {
           aria-expanded={isOpen}
           onClick={() => setIsOpen((current) => !current)}
         >
-          마음만 보태기
+          마음만 보내기
         </button>
       </div>
 
