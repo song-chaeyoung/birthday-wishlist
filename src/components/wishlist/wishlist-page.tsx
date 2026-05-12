@@ -16,7 +16,7 @@ export function WishlistPage({ wishes, summary }: WishlistPageProps) {
       <section className="mx-auto flex max-w-6xl flex-col gap-8">
         <header className="pixel-card bg-[#fffdf4] p-6 sm:p-8">
           <div className="max-w-2xl space-y-4">
-            <p className="sticker-label w-fit">Y2K BIRTHDAY BOARD</p>
+            <p className="sticker-label w-fit">BIRTHDAY BOARD</p>
             <h1 className="pixel-display text-4xl leading-tight sm:text-6xl">
               {wishlistTitle}
             </h1>
