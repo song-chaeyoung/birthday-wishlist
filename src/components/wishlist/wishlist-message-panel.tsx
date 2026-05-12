@@ -14,7 +14,7 @@ export function WishlistMessagePanel() {
 
   return (
     <section
-      className="relative overflow-hidden border-t-4 border-[#381a55] pt-5"
+      className="relative overflow-hidden"
       aria-label="비공개 메시지 남기기"
     >
       {showEffect ? (
@@ -26,15 +26,7 @@ export function WishlistMessagePanel() {
       ) : null}
 
       <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-end">
-        <div className="space-y-3">
-          <p className="sticker-label w-fit">PRIVATE NOTE</p>
-          <h2 className="pixel-display text-2xl text-[#381a55]">
-            마음만 남기기
-          </h2>
-          <p className="text-sm font-bold leading-6 text-[#5a3a6f]">
-            축하 마음은 비공개로 조용히 받아둘게요.
-          </p>
-        </div>
+        <div className="space-y-3"></div>
 
         <button
           className="pixel-button w-full lg:w-48"

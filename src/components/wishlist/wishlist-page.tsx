@@ -21,7 +21,6 @@ export function WishlistPage({ wishes, summary }: WishlistPageProps) {
               {wishlistTitle}
             </h1>
             <p className="text-base font-bold leading-7 text-[#5a3a6f] sm:text-lg">
-              생일에 살짝 마음을 얹어주고 싶은 고가 위시템들을 모아뒀어요.
               결제는 없고, 메시지는 저만 조용히 확인할게요.
             </p>
           </div>
