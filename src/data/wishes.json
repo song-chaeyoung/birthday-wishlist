@@ -22,6 +22,17 @@
     "status": "open"
   },
   {
+    "id": "new-york-perfect-cheese-8pcs",
+    "name": "뉴욕 퍼펙트 치즈 8개입",
+    "description": "일본 과자 직구 상품. 상품가 19,000원에 배송비 4,500원을 더한 8개입 구성.",
+    "price": 23500,
+    "fundedAmount": 0,
+    "image": "/wish/new-york-perfect-cheese-8pcs.jpg",
+    "productUrl": "https://smartstore.naver.com/niconicoglobal/products/8316043309",
+    "priority": "normal",
+    "status": "open"
+  },
+  {
     "id": "mac-mini-m4-24gb-512gb",
     "name": "Mac mini M4",
     "description": "Apple M4 칩, 10코어 CPU, 10코어 GPU, 24GB 통합 메모리, 512GB SSD 저장 장치의 초소형 데스크탑 Mac mini.",
