@@ -16,6 +16,13 @@ describe("BankAccountPanel", () => {
     vi.restoreAllMocks();
   });
 
+  it("does not expose bank account details on screen", () => {
+    const { container } = render(<BankAccountPanel />);
+
+    expect(container).not.toHaveTextContent(bankAccount.bankName);
+    expect(container).not.toHaveTextContent(bankAccount.accountNumber);
+  });
+
   it("copies the bank name with the account number", async () => {
     const writeText = vi.fn().mockResolvedValue(undefined);
     const accountText = `${bankAccount.bankName} ${bankAccount.accountNumber}`;

@@ -65,9 +65,6 @@ export function BankAccountPanel() {
             계좌로 마음 보태기
           </h2>
           <p className="text-sm font-bold text-[#5a3a6f]">
-            {bankAccount.bankName} {bankAccount.accountNumber}
-          </p>
-          <p className="text-sm font-bold text-[#5a3a6f]">
             예금주 {bankAccount.accountHolder}
           </p>
         </div>
